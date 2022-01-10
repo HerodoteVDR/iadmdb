@@ -79,10 +79,16 @@ h1 {
 }
 
 
+
+
 .commentbox {
     padding: calc(5 / 16 * 1rem);
     width: 100%;
     cursor: pointer;
+}
+
+.comment__username {
+    width: 200px;
 }
 
 .input_comment {
