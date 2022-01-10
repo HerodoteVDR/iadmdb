@@ -40,7 +40,8 @@ h1 {
 }
 
 .moviecontainer_content__item > h2 {
-
+    background-image: linear-gradient(45deg, var(--color-red--dark) , rgba(255,0,0,0)40%);
+    border-radius: 40px;
     padding: calc(10 / 16 * 1rem);
 }
 
@@ -48,6 +49,7 @@ h1 {
 .moviecontainer_content__item > p {
 
     padding: calc(10 / 16 * 1rem);
+    max-width: 600px;
 }
 
 
