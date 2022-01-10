@@ -1,0 +1,48 @@
+.searchbox {
+    border-radius: 20px;
+    padding: calc(15 / 16 * 1rem);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: calc(15 / 16 * 1rem);
+    background-image: linear-gradient(var(--color-grey-dark), var(--color-grey-light));
+    cursor: pointer;
+}
+
+.searchbox:hover .input_search {
+    border-radius: 20px;
+
+}
+
+.input_search {
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    background-color: var(--color-white);
+    font-size: calc(25 / 16 * 1rem);
+    color: var(--color-grey-dark);
+    width: 100%;
+    transition: border-radius 0.2s ease-out;
+
+}
+
+/* film aléatoire */
+
+.randommovie_content {
+    padding-top: calc(50 / 16 * 1rem);
+}
+
+
+.randommovie_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: calc(20 / 16 * 1rem);
+}
+
+.randommovie_list__item {
+    height: 100%;
+    width: 100%;
+}
+

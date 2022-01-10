@@ -1,0 +1,159 @@
+/* import font work sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+/* root */
+
+:root {
+    /* colors */
+
+    --color-black: #0E0E1B;
+    --color-blue--dark: #0E0E5B;
+    --color-white: #FEFBFE;
+    --color-grey-dark: #89888E;
+    --color-grey-light: #CECCD0;
+    --color-blue: #8CE4C3;
+    --color-red: #C92D39;
+    --color-red--dark: #841E26;
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font: 14px "Work Sans", Helvetica, Arial, sans-serif;
+    color: var(--color-white);
+    background-image: radial-gradient(var(--color-blue--dark), var(--color-black));
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+.container {
+
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: calc(20 / 16 * 1rem);
+    padding-right: calc(20 / 16 * 1rem);
+
+}
+
+.pagesection {
+    padding-top: calc(60 / 16 * 1rem);
+    padding-bottom: calc(60 / 16 * 1rem);
+}
+
+.title_text {
+    color: var(--color-blue);
+
+    padding-bottom: calc(40 / 16 * 1rem);
+    font-size: calc(45 / 16 * 1rem);
+    font-weight: 600;
+    transition: color 0.2s ease-out;
+    width: fit-content;
+    display: block;
+}
+
+/* header */
+.title_text:hover {
+    color: var(--color-red);
+}
+
+.welcome_text {
+    font-size: calc(65 / 16 * 1rem);
+    padding-bottom: calc(25 / 16 * 1rem);
+    color: var(--color-grey-light);
+}
+
+strong {
+    color: var(--color-white)
+}
+
+.normal_text {
+    font-size: calc(35 / 16 * 1rem);
+    padding-bottom: calc(15 / 16 * 1rem);
+}
+
+
+.button {
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--color-red--dark);
+    color: var(--color-white);
+    margin-top: calc(20 / 16 * 1rem);
+    padding: calc(10 / 16 * 1rem);
+
+    font-size: calc(18 / 16 * 1rem);
+
+    transition: transform 0.2s ease-out, background-color 0.1s ease-in;
+
+}
+
+.button > img {
+    padding-bottom: calc(10 / 16 * 1rem);
+}
+
+.button h5 {
+    max-width: fit-content;
+    padding-bottom: calc(5 / 16 * 1rem);
+}
+
+.button:hover {
+    transform: rotate3d(5, 15, 2, 20deg);
+    background-color: var(--color-red);
+
+}
+
+
+
+.fluidimage {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* commentaire style */
+
+
+
+/* header */
+
+header {
+    padding-top: calc(50/16*1rem);
+}
+
+/* footer */
+
+.footer_nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+/* utilities */
+
+.redtext {
+    color: var(--color-red);
+}

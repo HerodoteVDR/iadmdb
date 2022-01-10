@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IADMDB</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/formstylesheet.css'/>
+</head>
+<body>
+
+<%- include('./composite/header'); %>
+
+<main>
+    <ul class="form_container">
+        <div>
+            <form action="search">
+                <h2>Créez votre profil !</h2>
+                <h3>Nom :</h3>
+                <input type="text" class="textimput" placeholder="Ex : Deschamps" required>
+                <h3>Prénom :</h3>
+                <input type="text" class="textimput" placeholder="Ex : Pierre" required>
+                <h3>Âge (en année):</h3>
+                <div class="range">
+                    <input id="slider" type="range" min="10" max="99" step="1">
+                    <div id="rangebutton">
+                        <div class="selectrange"><div id="selectvalue"></div></div>
+                    </div>
+                </div>
+
+
+                <h3>Genre :</h3>
+                <ul class="radio-flex" >
+                    <li class="radio-flex__item"><p>Homme</p><input type="radio" name="sex" value="male"></li>
+                    <li class="radio-flex__item"><p>Femme</p><input type="radio" name="sex" value="female"></li>
+                    <li class="radio-flex__item"><p>Autre</p><input type="radio" name="sex" value="other" checked></li>
+                </ul>
+
+
+                <input type="submit" value="Continuer" class="button">
+            </form>
+        </div>
+</main>
+
+<%- include('./composite/footer'); %>
+<script>
+    let slider = document.getElementById("slider")
+    let selector = document.getElementById("rangebutton");
+    let value = document.getElementById("selectvalue");
+
+
+    value.innerHTML = slider.value;
+
+    slider.oninput = function () {
+        value.innerHTML = slider.value;
+
+        selector.style.left = this.value + "%";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IADMDB</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/moviestyle.css'/>
+</head>
+<body>
+<%- include('./composite/header'); %>
+
+<div class="container">
+    <div class="pagesection">
+        <div class="moviecontainer ">
+            <div class="moviecontainer_image">
+                <img width="300px" class="fluidimage" src="https://image.tmdb.org/t/p/w500/<%= movie.poster_path %>"/>
+            </div>
+            <div class="moviecontainer_content">
+                <ul class="moviecontainer_content__list">
+                    <li class="moviecontainer_content__item"><h2>titre :</h2>
+                        <p><%= movie.original_title %></p></li>
+                    <li class="moviecontainer_content__item ratings"><h2>ratings :</h2>
+                        <p><%= movie.vote_average %> /
+                            10</p></li>
+                    <li class="moviecontainer_content__item"><h2>réalisateur :</h2>
+                        <p><%= director[0].name %></p></li>
+                    <li class="moviecontainer_content__item"><h2>box office :</h2>
+                        <p><%= movie.revenue %> $</p></li>
+                    <li class="moviecontainer_content__item"><h2>genre :</h2>
+                        <p><% for (let i=0 ; i<movie.genres.length; i++) { %> <%= movie.genres[i].name %> <% };
+                            %></p>
+                    </li>
+                    <li class="moviecontainer_content__item"><h2>résumé :</h2>
+                        <p><%= movie.overview %></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="commentaires_content pagesection container">
+            <h1> commentaires : </h1>
+            <ul class="comment posted_comment">
+                <li class="comment__icon"><img src="<%= teacherImage %>" class="iconimage"/></li>
+                <li class="comment__username"><h3><%= teacherName %></h3></li>
+                <li class="comment__content"><p><%= comment %></p></li>
+            </ul>
+            <ul class="comment your_comment">
+                <li class="comment__icon"><img class=" iconimage" src="https://i.ibb.co/QjBT7sv/user.jpg"
+                                               class="comment_icon"/></li>
+                <li class="comment__username"><h3></h3></li>
+                <li class="comment__content">
+                    <div class="commentbox">
+                        <input type="text" class="input_comment" placeholder="Votre commentaire">
+                    </div>
+                </li>
+                <li class="button">Poster</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('./composite/footer'); %>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+h1 {
+    padding-bottom: calc(20 / 16 * 1rem);
+}
+
+
+/* movieinfos */
+
+
+.moviecontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(20 / 16 * 1rem);
+    padding-bottom: calc(50 / 16 * 1rem);
+
+}
+
+.moviecontainer_image > img {
+    border-radius: 40px;
+}
+
+.moviecontainer_content {
+    padding-bottom: calc(50 / 16 * 1rem);
+}
+
+.moviecontainer_content__list {
+    max-width: 800px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: calc(15 / 16 * 1rem);
+}
+
+.moviecontainer_content__item {
+
+    display: flex;
+    flex-direction: row;
+    gap: calc(15 / 16 * 1rem);
+    align-items: center;
+}
+
+.moviecontainer_content__item > h2 {
+
+    padding: calc(10 / 16 * 1rem);
+}
+
+
+.moviecontainer_content__item > p {
+
+    padding: calc(10 / 16 * 1rem);
+}
+
+
+.moviecontainer_content__item:last-child {
+    align-items: start;
+}
+
+
+/* commentaires */
+
+.commentaires_content {
+    background-image: linear-gradient(var(--color-grey-light), var(--color-grey-dark));
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.comment {
+    padding: calc(15 / 16 * 1rem);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: calc(20 / 16 * 1rem);
+}
+
+
+.commentbox {
+    padding: calc(5 / 16 * 1rem);
+    width: 100%;
+    cursor: pointer;
+}
+
+.input_comment {
+
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: var(--color-white);
+    font-size: calc(18 / 16 * 1rem);
+    width: 100%;
+    color: var(--color-grey-dark);
+    transition: border-radius 0.2s ease-out;
+
+}
+
+.input_comment:hover {
+    border-radius: 15px;
+}
+
+
+.your_comment {
+    max-width: 600px;
+    margin-top: calc(15 / 16 * 1rem);
+    background-image:linear-gradient(45deg, var(--color-black), var(--color-blue--dark)) ;
+    border-radius: 50px;
+    height: 50px;
+}
+
+
+
+.posted_comment {
+    background-image: linear-gradient(45deg, var(--color-red--dark), var(--color-red));
+    border-radius: 50px;
+}
+.button {
+    margin: 0;
+}
+
+.iconimage {
+    border-radius: 150px;
+    display: block;
+    width: 50px;
+    height: auto;
+}
