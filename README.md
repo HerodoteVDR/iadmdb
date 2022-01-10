@@ -8,7 +8,7 @@ Install dependencies and packages (npm install)
 
 2. Npm run start 
 
-3. Go to localhost:3000 to run the app
+3. Go to localhost:3000 on your browser to run the app
 
 ## infos
 
