@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRouter);
-app.use('/movie', movieRouter);
+app.use('/movies', movieRouter);
 app.use('/search', searchRouter);
 
 
