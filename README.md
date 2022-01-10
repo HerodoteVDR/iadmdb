@@ -18,6 +18,8 @@ If you want to get a random movie, you can go to request : localhost:3000/movie/
 
 This project is a school project and has not a serious purpose, the comments portrayed in this production are ficticious and do not relate to any philosophic or religious group.
 
+For the main part of this project you can just follow the buttons instructions !
+
 # credits
 
 For the movie database, I've used TMDB API : https://www.themoviedb.org
