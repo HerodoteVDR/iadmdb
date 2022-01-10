@@ -253,9 +253,7 @@ module.exports = router;
 //     let requestedMovieName = req.query.name;
 //     // Get movie data from tmdb
 //     const movieName = await getMovieByName(requestedMovieName);
-//     console.log(movieName);
 //     let requestedMovie = movieName.results[0].id;
-//     console.log(requestedMovie)
 //     // Get movie data from tmdb
 //     const movies = await getSpecificMovie(requestedMovie);
 //
